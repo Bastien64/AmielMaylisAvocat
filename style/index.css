@@ -3,10 +3,24 @@
 /*Effet*/
 
 .fade-in-left {
-    animation: fadeInLeft 1s ease-in;
+    opacity: 0;
+    transform: translateX(-50px);
 }
 
-@keyframes fadeInLeft {
+.fade-in-left.active {
+    animation: fade-in-left 1.5s ease forwards;
+  }
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  
+  .fade-in-right.active {
+    animation: fade-in-right 1.5s ease forwards;
+  }
+
+@keyframes fade-in-left {
     from {
         opacity: 0;
         transform: translateX(-50px);
@@ -17,6 +31,16 @@
         transform: translateX(0);
     }
 }
+
+@keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }}
 
 
 body {
@@ -205,7 +229,7 @@ span {
 .divsecondscreen {
     font-family: "Roboto", sans-serif;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url(/background/2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,4 +239,106 @@ h2 {
     font-size: 55px !important;
     font-weight: 700 !important;
     text-align: center;
+}
+
+h3 {
+    font-weight: 700 !important;
+}
+
+.divsecondscreenmain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.photodelajustice {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.divsecondscreenright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+/*third screen*/
+
+.divthirdscreen {
+    padding-top: 5%;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/background/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divthirdscreenmain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0%;
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.divthirdscreenleftphoto {
+    width: 469px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    margin-left: 2%;
+}
+h5 {
+    font-size: 35px!important;
+    text-align: center;
+    font-weight: 700 !important;
+    text-align: center;
+    color : #909090 !important;  
+    margin-top: 2%!important;
+}
+
+/*fourth screen*/
+.divfourthscreen {
+    padding-top: 1%;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/background/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.divfourthscreenmain1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.divfourthscreenmain1leftphoto {
+    width: 358px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.divfourthscreenmain1right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
