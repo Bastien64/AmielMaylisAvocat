@@ -391,7 +391,7 @@ h5 {
 
 /*contact*/
 .divcontactscreen {
-    padding-top: 5%;
+    padding-top: 150px;
     font-family: "Roboto", sans-serif;
     width: 100%;
 
@@ -426,7 +426,7 @@ label {
     font-size: 25px !important;
 }
 input {
-    width: 300px;
+    width: 400px;
     height: 40px;
     border-radius: 10px;
     border: 1px solid #000000;
@@ -440,7 +440,7 @@ input {
 }
 
 textarea {
-    width: 300px;
+    width: 400px;
     height: 300px;
     border-radius: 10px;
     border: 1px solid #000000;
@@ -829,7 +829,7 @@ h3 {
 /*third screen*/
 
 .divthirdscreen {
-    padding-top: 1%;
+    padding-top: 20%;
     font-family: "Roboto", sans-serif;
     width: 100%;
 
@@ -945,7 +945,7 @@ h5 {
 
 /*contact*/
 .divcontactscreen {
-    padding-top: 2%;
+    padding-top: 20%;
     font-family: "Roboto", sans-serif;
     width: 100%;
 
