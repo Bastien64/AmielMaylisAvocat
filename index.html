@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" href="photo/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Maylis-Amiel-Avocat</title>
+    <title>Cabinet d'avocats Amiel Vincent</title>
 </head>
 
 <body>
@@ -160,68 +161,86 @@
             </div>
         </div>
     </div>
-<!--    
+    <!--    
     <div class="divfifthscreen " id="NosHonoraires">
         <H2>Nos <br> Honoraires</H2>
     </div>
 -->
-    <div class="divcontactscreen " id="Contact">
-        <H2>Nous <br> Contacter</H2>
-        <div class="contactsection">
-            <div class="divcontactscreenleft fade-in-left">
-                <img src="photo/logo2.png" alt="Logo du cabinet" class="logo2">
-                <p> <strong>Adresse :</strong> 12 bd Lazare Carnot <br>31000 Toulouse</p>
-                <p> <strong>Téléphone :</strong> 05 61 25 34 91</p>
-                <p> <strong>Email :</strong> scpamielvincent@outlook.com </p>
-            </div>
+<div class="divcontactscreen" id="Contact">
+    <h2>Nous<br>Contacter</h2>
+    <div class="contactsection">
+        <div class="divcontactscreenleft fade-in-left">
+            <img src="photo/logo2.png" alt="Logo du cabinet" class="logo2">
+            <p><strong>Adresse :</strong> 12 bd Lazare Carnot<br>31000 Toulouse</p>
+            <p><strong>Téléphone :</strong> 05 61 25 34 91</p>
+            <p><strong>Email :</strong> scpamielvincent@outlook.com</p>
+        </div>
 
+        <div class="divcontactscreenright">
+            <!-- Boutons pour choisir entre les formulaires -->
+            <div class="boutonchoix">
+            <button id="maylisButton" class="active-button" onclick="switchForm('maylis')">Vincent</button>
+            <button id="amielButton" class="inactive-button" onclick="switchForm('amiel')">Amiel</button>
+        </div>
+            <!-- Formulaire pour Maylis -->
+            <form id="maylisForm" name="maylis-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{maylis_form_id}" method="post">
+                <fieldset id="maylis-frm-inputs">
+                    <label for="maylis-full-name">Nom / Prénom</label>
+                    <input type="text" name="name" id="maylis-full-name" placeholder="" required="">
+                    <label for="maylis-email-address">Adresse Email</label>
+                    <input type="email" name="_replyto" id="maylis-email-address" placeholder="email@domain.com" required="">
+                    <label for="maylis-message">Message</label>
+                    <textarea rows="5" name="message" id="maylis-message" placeholder="" required=""></textarea>
+                    <input type="hidden" name="_subject" id="maylis-email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Envoyer" class="send">
+            </form>
 
-            <div class="divcontactscreenright">
-                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
-                    action="https://formspree.io/f/{form_id}" method="post">
-                    <fieldset id="fs-frm-inputs"><label for="full-name">Nom / Prénom</label> <input type="text" name="name"
-                            id="full-name" placeholder="First and Last" required=""> <label for="email-address">Email
-                            Address</label> <input type="email" name="_replyto" id="email-address"
-                            placeholder="email@domain.com" required=""> <label for="message">Message</label> <textarea
-                            rows="5" name="message" id="message"
-                            placeholder=""
-                            required=""></textarea> <input type="hidden" name="_subject" id="email-subject"
-                            value="Contact Form Submission">
-                    </fieldset><input type="submit" value="Envoyer" class="send">
-                </form>
-
-            </div>
+            <!-- Formulaire pour Amiel -->
+            <form id="amielForm" name="amiel-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{amiel_form_id}" method="post" style="display: none;">
+                <fieldset id="amiel-frm-inputs">
+                    <label for="amiel-full-name">Nom / Prénom</label>
+                    <input type="text" name="name" id="amiel-full-name" placeholder="" required="">
+                    <label for="amiel-email-address">Adresse Email</label>
+                    <input type="email" name="_replyto" id="amiel-email-address" placeholder="email@domain.com" required="">
+                    <label for="amiel-message">Message</label>
+                    <textarea rows="5" name="message" id="amiel-message" placeholder="" required=""></textarea>
+                    <input type="hidden" name="_subject" id="amiel-email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Envoyer" class="send">
+            </form>
         </div>
     </div>
-    <footer>
-        <div class="divfooter">
-            <div class="divfooterleft">
-                <img src="photo/logo2.png" alt="Logo de carbonFight" class="footerlogo">
+</div>
+        <footer>
+            <div class="divfooter">
+                <div class="divfooterleft">
+                    <img src="photo/logo2.png" alt="Logo de carbonFight" class="footerlogo">
 
+                </div>
+                <div class="Legal">
+                    <a class="footerb" href="/pages/politique.html"> Politique de confidentialité </a>
+                    <a class="footera" href="/pages/conditiongénérale.html">Conditions Générales</a>
+                    <a class="footera" href="#contact">Contact</a>
+                </div>
             </div>
-            <div class="Legal">
-                <a class="footerb" href="/pages/politique.html"> Politique de confidentialité </a>
-                <a class="footera" href="/pages/conditiongénérale.html">Conditions Générales</a>
-                <a class="footera" href="#contact">Contact</a>
+            <div class="divfooterbottom">
+                © 2024 SCA Amiel-Vincent. Tous droits réservés | Made By <a class="footerb"
+                    href="https://bastien.sitetest.best">Bastien VILLEGAS.</a> <br>
+                Sources visuelles : <button id="toggleButton">En savoir</button><br>
+                <div class="lienfooter"> *Freepik, licence : Free for commercial use WITH ATTRIBUTION license <br> <a
+                        href="https://www.freepik.com/free-vector/flat-design-carbon-neutral-illustration_27259139.htm"
+                        target="_blank" rel="noopener noreferrer" class="footerb">Lien vers l'image</a> <br>
+                    *Flaticon, licence : Free for commercial use WITH ATTRIBUTION license <br> Graphiste : <a
+                        href="https://www.flaticon.com/fr/auteurs/hexagon075" target="_blank" rel="noopener noreferrer"
+                        class="footerb">Hexagon075</a></div>
             </div>
-        </div>
-        <div class="divfooterbottom">
-            © 2024 SCA Amiel-Vincent. Tous droits réservés | Made By <a class="footerb"
-                href="https://bastien.sitetest.best">Bastien VILLEGAS.</a> <br>
-            Sources visuelles : <button id="toggleButton">En savoir</button><br>
-            <div class="lienfooter"> *Freepik, licence : Free for commercial use WITH ATTRIBUTION license <br> <a
-                    href="https://www.freepik.com/free-vector/flat-design-carbon-neutral-illustration_27259139.htm"
-                    target="_blank" rel="noopener noreferrer" class="footerb">Lien vers l'image</a> <br>
-                *Flaticon, licence : Free for commercial use WITH ATTRIBUTION license <br> Graphiste : <a
-                    href="https://www.flaticon.com/fr/auteurs/hexagon075" target="_blank" rel="noopener noreferrer"
-                    class="footerb">Hexagon075</a></div>
-        </div>
-    </footer>
+</footer>
 
-    <script src="/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+        <script src="/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

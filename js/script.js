@@ -36,3 +36,20 @@ document.addEventListener('DOMContentLoaded', function() {
     checkPosition();
   });
   
+  function switchForm(form) {
+    if (form === 'maylis') {
+        document.getElementById('maylisForm').style.display = 'block';
+        document.getElementById('amielForm').style.display = 'none';
+        document.getElementById('maylisButton').classList.add('active-button');
+        document.getElementById('maylisButton').classList.remove('inactive-button');
+        document.getElementById('amielButton').classList.add('inactive-button');
+        document.getElementById('amielButton').classList.remove('active-button');
+    } else if (form === 'amiel') {
+        document.getElementById('maylisForm').style.display = 'none';
+        document.getElementById('amielForm').style.display = 'block';
+        document.getElementById('maylisButton').classList.add('inactive-button');
+        document.getElementById('maylisButton').classList.remove('active-button');
+        document.getElementById('amielButton').classList.add('active-button');
+        document.getElementById('amielButton').classList.remove('inactive-button');
+    }
+}
