@@ -148,13 +148,23 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 1; /* Augmentation du z-index pour s'assurer qu'il ne soit pas caché */
         width: 260px;
-        height: auto;
-        background-color: rgba(255, 255, 255, 0.35);
+        height: 500px; /* Spécification d'une hauteur fixe pour tester la visibilité */
+        background-color: rgba(255, 255, 255, 0.5); /* Couleur plus visible pour le test */
         transform: rotate(-35.02deg);
-        filter: blur(150px);
+        filter: blur(150px); /* Réduction de la valeur du blur pour le rendre visible */
     }
+    .figure2 {
+        position: absolute;
+        z-index: 1; /* Augmentation du z-index pour s'assurer qu'il ne soit pas caché */
+        width: 150px;
+        height: 400px; /* Spécification d'une hauteur fixe pour tester la visibilité */
+        background-color: rgba(255, 255, 255, 0.5); /* Couleur plus visible pour le test */
+        transform: rotate(-35.02deg);
+        filter: blur(150px); /* Réduction de la valeur du blur pour le rendre visible */
+    }
+
 
     .photodiv1A_container,
     .photodiv1B_container {
@@ -359,6 +369,7 @@
 
     .divfourthscreenmain1leftphoto {
         width: 300px;
+
         border-radius: 20px;
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
     }
@@ -1016,7 +1027,6 @@
         padding-top: 20%;
         font-family: "Roboto", sans-serif;
         width: 100%;
-
         background-image: url(/background/2A.jpg);
         background-repeat: repeat;
 
@@ -1033,6 +1043,13 @@
         align-items: center;
         justify-content: space-around;
 
+    }
+
+    .divcontactscreenright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     fieldset {

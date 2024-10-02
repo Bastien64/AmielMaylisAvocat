@@ -168,6 +168,7 @@
         <h5>L'équipe</h5>
         <div class="divfourthscreenmain1">
             <div class="divfourthscreenmain1left">
+
                 <img src="photo/VincentV2.JPG" alt="Maylis Vincent Avocate" class="divfourthscreenmain1leftphoto">
             </div>
             <div class="divfourthscreenmain1right fade-in-right">
@@ -287,24 +288,25 @@
 </div>
 
         <div class="divcontactscreen" id="Contact">
+            <div class="figure2"></div>
             <h2>Nous<br>Contacter</h2>
             <div class="contactsection">
                 <div class="divcontactscreenleft fade-in-left">
                     <img src="photo/logo2.png" alt="Logo du cabinet" class="logo2">
-                    <p><strong>Adresse :</strong> 12 bd Lazare Carnot<br>31000 Toulouse</p>
-                    <p><strong>Téléphone :</strong> 05 61 25 34 91</p>
-                    <p><strong>Email :</strong> scpamielvincent@outlook.com</p>
+                    <p><strong>Adresse :</strong> 12 bd Lazare Carnot<br>31000 Toulouse <br>
+                    <strong>Téléphone :</strong> 05 61 25 34 91<br>
+                    <strong>Email :</strong> scpamielvincent@outlook.com</p>
                 </div>
 
                 <div class="divcontactscreenright">
                     <!-- Boutons pour choisir entre les formulaires -->
                     <div class="boutonchoix">
-                        <button id="maylisButton" class="active-button" onclick="switchForm('maylis')">Vincent</button>
-                        <button id="amielButton" class="inactive-button" onclick="switchForm('amiel')">Amiel</button>
+                        <button id="maylisButton" class="active-button" onclick="switchForm('maylis')">Maître <br> Maylis Vincent</button>
+                        <button id="amielButton" class="inactive-button" onclick="switchForm('amiel')">Maître <br> Valerie Amiel</button>
                     </div>
                     <!-- Formulaire pour Maylis -->
                     <form id="maylisForm" name="maylis-contact-form" accept-charset="utf-8"
-                        action="https://formspree.io/f/{maylis_form_id}" method="post">
+                        action="https://formspree.io/f/meojyyej" method="post">
                         <fieldset id="maylis-frm-inputs">
                             <label for="maylis-full-name">Nom / Prénom</label>
                             <input type="text" name="name" id="maylis-full-name" placeholder="" required="">
@@ -314,13 +316,13 @@
                             <label for="maylis-message">Message</label>
                             <textarea rows="5" name="message" id="maylis-message" placeholder="" required=""></textarea>
                             <input type="hidden" name="_subject" id="maylis-email-subject"
-                                value="Contact Form Submission">
+                                value="Contact du site Internet amiel-vincent-avocats.fr">
                         </fieldset>
                         <input type="submit" value="Envoyer" class="send">
                     </form>
 
                     <!-- Formulaire pour Amiel -->
-                    <form id="amielForm" name="amiel-contact-form" accept-charset="utf-8" method="POST"
+                    <form id="amielForm" name="amiel-contact-form" accept-charset="utf-8" method="POST"  action="https://formspree.io/f/movaggvq"
                         style="display: none;">
                         <fieldset id="amiel-frm-inputs">
                             <label for="name">Nom / Prénom</label>
@@ -330,7 +332,7 @@
                             <label for="message">Message</label>
                             <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
                             <input type="hidden" name="_subject" id="amiel-email-subject"
-                                value="Contact Form Submission">
+                                value="Contact du site Internet amiel-vincent-avocats.fr">
                         </fieldset>
                         <input type="submit" value="Envoyer" class="send">
                     </form>
