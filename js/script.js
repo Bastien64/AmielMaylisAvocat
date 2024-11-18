@@ -78,3 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+function toggleDropdown(header) {
+  const content = header.nextElementSibling;
+  const isOpen = content.classList.toggle('open');
+  header.classList.toggle('active', isOpen);
+}

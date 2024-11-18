@@ -1,56 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @media only screen and (min-width: 767px) {
-    .divsecondscreenright .dropdown-item {
-        margin-bottom: 15px;
-    }
-    
-em {
-    color: white;
-}
-    .divsecondscreenright .dropdown-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #e0d7c7;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        width: 100%;           /* Assure que le header ne dépasse pas */
-        box-sizing: border-box;
-    }
-    
-    .divsecondscreenright .dropdown-header .arrow {
-        transition: transform 0.3s ease;
-    }
-    
-    .divsecondscreenright .dropdown-header.active .arrow {
-        transform: rotate(180deg);
-    }
-    
-    .divsecondscreenright .dropdown-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease, padding 0.3s ease;
-        background: #f9f9f9;
-        padding: 0 15px;
-        border-left: 3px solid #e0d7c7;
-        box-sizing: border-box; /* S'assure que les dimensions incluent le padding et les bordures */
-    }
-    
-    
-    .divsecondscreenright .dropdown-content p {
-        margin: 10px 0;
-        word-wrap: break-word; /* Permet au texte de passer à la ligne lorsqu'il dépasse la largeur */
-        white-space: normal;   /* Autorise les retours à la ligne pour le texte */
-        line-height: 1.5;      /* Améliore la lisibilité */
-    }
-    
-    .divsecondscreenright .dropdown-content.open {
-        max-height: 1500px; /* Ajuster selon le contenu */
-        padding: 10px 15px;
-    }
-    
     .dropdown-menu{
         width: 90vw;
         max-width: 95vw;
@@ -320,7 +269,7 @@ em {
 
     h3 {
         font-weight: 700 !important;
-        font-size: 20px!important;
+
     }
 
     .divsecondscreenmain {
@@ -644,70 +593,7 @@ em {
 }
 
 @media only screen and (max-width: 765px) {
-    .divsecondscreenright .dropdown-item {
-        margin-bottom: 15px;
-    }
-    
-em {
-    color: black;
 
-}
-    .divsecondscreenright .dropdown-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #e0d7c7;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        width: 100%;           /* Assure que le header ne dépasse pas */
-        box-sizing: border-box;
-    }
-    
-    .divsecondscreenright .dropdown-header .arrow {
-        transition: transform 0.3s ease;
-    }
-    
-    .divsecondscreenright .dropdown-header.active .arrow {
-        transform: rotate(180deg);
-    }
-    
-    .divsecondscreenright .dropdown-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease, padding 0.3s ease;
-        background: #f9f9f9;
-        padding: 0 15px;
-        border-left: 3px solid #e0d7c7;
-        box-sizing: border-box; /* S'assure que les dimensions incluent le padding et les bordures */
-    }
-    
-    
-    .divsecondscreenright .dropdown-content p {
-        margin: 10px 0;
-        word-wrap: break-word; /* Permet au texte de passer à la ligne lorsqu'il dépasse la largeur */
-        white-space: normal;   /* Autorise les retours à la ligne pour le texte */
-        line-height: 1.5;      /* Améliore la lisibilité */
-    }
-    
-    .divsecondscreenright .dropdown-content.open {
-        max-height: 1500px; /* Ajuster selon le contenu */
-        padding: 10px 15px;
-    }
-    
-    .dropdown-menu{
-        width: 90vw;
-        max-width: 95vw;
-        position: relative;
-        margin-right: 20px!important;
-        padding-right: 20px!important;
-        
-
-    }
-    .dropdown-menu >p{
-        width: 90vw;
-        margin-right: 20px;}
     /* Masquer par défaut les paragraphes et le contenu sous les h3 */
     .divsecondscreenright h3+p {
         display: none;
@@ -984,9 +870,9 @@ em {
         text-align: center;
 
     }
+
     h3 {
         font-weight: 700 !important;
-        font-size: 16px!important;
     }
 
     .divsecondscreenmain {
