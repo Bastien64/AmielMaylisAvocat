@@ -233,7 +233,7 @@ em {
     .text_overlay1 {
         position: absolute;
         top: 0;
-        margin-top: 75%;
+        margin-top: 45%;
 
 
         transform: translateX(-50%);
@@ -256,9 +256,9 @@ em {
     .text_overlay2 {
         position: absolute;
         top: 0;
-        margin-top: 75%;
-        margin-left: 70%;
-
+        margin-top: 45%;
+        margin-right: 20%;
+        transform: translateX(-55%);
         z-index: 100;
         font-weight: 700;
         text-align: center;
@@ -281,7 +281,7 @@ em {
         /* Assurez-vous que photodiv1 est positionnée */
         z-index: 2;
         /* Assurez-vous que photodiv1 soit au-dessus de .figure */
-        width: 200px;
+        width: 300px;
         height: auto;
         margin-bottom: 10%;
         border-radius: 20px;
@@ -294,7 +294,7 @@ em {
         /* Assurez-vous que photodiv1 est positionnée */
         z-index: 2;
         /* Assurez-vous que photodiv1 soit au-dessus de .figure */
-        width: 200px;
+        width: 300px;
         height: auto;
         border-radius: 20px;
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
@@ -335,7 +335,7 @@ em {
     }
 
     .photodelajustice {
-        width: 350px;
+        width: 450px;
         border-radius: 20px;
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
     }
@@ -419,7 +419,7 @@ em {
     }
 
     .divfourthscreenmain1leftphoto {
-        width: 300px;
+        width: 400px;
 
         border-radius: 20px;
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
@@ -897,7 +897,7 @@ em {
     .text_overlay1 {
         position: absolute;
         top: 0;
-        margin-top: 75%;
+        margin-top: 55%;
         margin-left: 25%;
 
         transform: translateX(-50%);
@@ -920,8 +920,8 @@ em {
     .text_overlay2 {
         position: absolute;
         top: 0;
-        margin-top: 75%;
-        margin-left: 35%;
+        margin-top: 55%;
+        margin-left: 45%;
 
         z-index: 100;
         font-weight: 700;
@@ -945,8 +945,8 @@ em {
         /* Assurez-vous que photodiv1 est positionnée */
         z-index: 2;
         /* Assurez-vous que photodiv1 soit au-dessus de .figure */
-        width: 170px;
-        height: 240px;
+        width: 350px;
+
         margin-bottom: 10%;
         border-radius: 20px;
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
@@ -958,8 +958,8 @@ em {
         /* Assurez-vous que photodiv1 est positionnée */
         z-index: 2;
         /* Assurez-vous que photodiv1 soit au-dessus de .figure */
-        width: 170px;
-        height: 246px;
+        width: 350px;
+
         border-radius: 20px;
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
     }
@@ -1000,7 +1000,7 @@ em {
     }
 
     .photodelajustice {
-        width: 250px;
+        width: 350px;
         border-radius: 20px;
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
     }
@@ -1047,7 +1047,7 @@ em {
     }
 
     .divthirdscreenleftphoto {
-        width: 300px;
+        width: 350px;
         border-radius: 20px;
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
         margin-left: 2%;
@@ -1084,7 +1084,7 @@ em {
     }
 
     .divfourthscreenmain1leftphoto {
-        width: 200px;
+        width:350px;
         border-radius: 20px;
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
     }
