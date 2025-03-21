@@ -318,7 +318,7 @@ em {
         text-align: center;
     }
 
-    h3 {
+    h3, h4 {
         font-weight: 700 !important;
         font-size: 20px!important;
     }
@@ -988,6 +988,11 @@ em {
     h3 {
         font-weight: 700 !important;
         font-size: 24px!important;
+    }
+
+    h4 {
+        font-weight: 700 !important;
+        font-size: 16px!important;
     }
 
     .divsecondscreenmain {
